@@ -1,0 +1,26 @@
+<div class="p-3 mb-2 bg-light text-dark rounded-3">
+
+    <p>
+        <h1><strong><%= @friend.first_name%> <%= @friend.last_name %></strong></h2>
+
+    </p>
+
+    <p>
+        <strong>Email:</strong>
+        <%= @friend.email %>
+    </p>
+
+    <p>
+        <strong>Phone:</strong>
+        <%= @friend.phone %>
+    </p>
+
+    <p>
+        <strong>Twitter:</strong>
+        <%= @friend.twitter %>
+    </p>
+
+    <%= link_to 'Edit', edit_friend_path(@friend), class: "btn btn-primary" %>
+    <%= link_to 'Back', friends_path, class: "btn btn-primary" %>
+
+</div>
